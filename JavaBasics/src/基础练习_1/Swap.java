@@ -1,18 +1,23 @@
+package 基础练习_1;
+
 /**
  * @author CXY
  * @date 2020-03-06 16:34
- * 描述信息：
+ * 描述信息：已知a,b均是整型变量，写出将a,b两个变量中的值互换的程序
+ * int   a=2;
+ * int  b=3;
+ *
  */
 public class Swap {
     public static void main(String[] args) {
-        int x = 5;
-        int y = 6;
-        System.out.println("x = "+x);
-        System.out.println("y = "+y);
+        int a = 2;
+        int b = 3;
+        System.out.println("a = "+a);
+        System.out.println("b = "+b);
         System.out.println("交换过后：");
-        swapOne(x,y);
-        swapTwo(x,y);
-        swapThree(x,y);
+        swapOne(a,b);
+        swapTwo(a,b);
+        swapThree(a,b);
     }
 
     /**
