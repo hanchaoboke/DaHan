@@ -31,8 +31,6 @@ public class Test {
             student.setStuName(sc.next());
             System.out.printf("学生年级：");
             student.setStuGrade(sc.nextByte());
-            System.out.printf("学生成绩：");
-            student.setStuScore(sc.nextInt());
             students[i] = student;
         }
 
@@ -58,6 +56,8 @@ public class Test {
             questions.setAnwser(sc.next());
             testQuestions[i] = questions;
         }
+
+
         // 开始考试,stuCode为学生编号
         boolean stuInfor = true;
         while(true){
@@ -79,7 +79,7 @@ public class Test {
                 int stuSum = 0;
 
                 // 随机生成题号
-                randomArr(randNum,10);
+                randomArr(randNum,29);
                 for (int j = 0; j < randNum.length; j++){
                     System.out.println(testQuestions[randNum[j]].getTitle());
                     System.out.println(testQuestions[randNum[j]].getAnwserA());
