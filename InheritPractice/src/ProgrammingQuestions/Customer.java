@@ -63,10 +63,10 @@ public class Customer extends Account{
         return ("Customer ["
                 +lastName+"，"+firstName
                 +"] has a account: id is "
-                +super.getId()+", annualInterestRate is "
-                +super.getAnnualInterestRate()
+                +account.getId()+", annualInterestRate is "
+                +account.getAnnualInterestRate()
                 + "%, balance is "+
-                super.getBalance()
+                account.getBalance()
                 +"");
     }
 }
