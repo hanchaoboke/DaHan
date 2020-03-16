@@ -6,4 +6,6 @@
 
 ## InheritPractice / src 文件夹下继承练习题
 
+## ProgrammingExercises / src 文件夹下为编程练习和Oop综合练习
+
 ## PolymorphisnPractice / src 文件夹下多态练习题
