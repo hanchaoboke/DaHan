@@ -25,15 +25,16 @@ public class HomeWorkThree {
         }
 
         int[] num = new int[N];
+        double sum = 0;
 
         for (int i = 0; i < num.length; i++){
             System.out.printf("请输入值");
             num[i] = sc.nextInt();
+            sum += num[i];
         }
 
-        for (int i = 0; i < num.length; i++) {
-            System.out.printf(" "+ num[i]);
-        }
+        System.out.println("平均数为:" + (sum / N));
+
     }
 }
 
