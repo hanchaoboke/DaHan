@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author HanChao
@@ -24,12 +23,31 @@ public class Test implements TestSystem {
         Test test = new Test();
         test.studentAdd();
         test.testPaperAdd();
-        test.answerPapers();
 
-        for (Student stu : linkStudent) {
-            System.out.println(stu.toString());
+        System.out.println("按0退出系统");
+        while (true) {
+
+            int stuId = 0;
+            int stuPwd = 0;
+            System.out.printf("请输入学号：");
+            stuId = sc.nextInt();
+            if (stuId == 0) {
+                System.exit(0);
+            }
+            System.out.printf("请输入密码：");
+            stuPwd = sc.nextInt();
+            if (stuPwd == 0) {
+                System.exit(0);
+            }
+
+            // 验证学生信息，不存在返回-1
+            int limits = test.verify(new Student(stuId,stuPwd));
+            if (limits == -1){
+                System.out.println("信息错误，请重新输入");
+            }else {
+                test.answerPapers(linkStudent.get(limits));
+            }
         }
-
     }
 
 
@@ -60,42 +78,33 @@ public class Test implements TestSystem {
     }
 
     @Override
-    public void answerPapers() {
-        // 输入学号和密码，匹配成功后开始答题
-        int stuId = 0;
-        int stuPwd = 0;
-        String answer = "";
-
-        loop:
-        for (int i = 0; i < 10; i++) {
-            System.out.printf("请输入学号：");
-            stuId = sc.nextInt();
-            System.out.printf("请输入密码：");
-            stuPwd = sc.nextInt();
-
-            for (Student stu : linkStudent) {
-                if (stu.getStuId() == stuId & stu.getStuPwd() == stuPwd) {
-                    System.out.println("学号" + stu.getStuId() + "，姓名" + stu.getStuName() + "，请开始答题");
-
-                    // 答题
-                    for (TestPaper test : linkTestPaper) {
-                        System.out.println(test.toString());
-                        System.out.printf("请输入你的答案：");
-                        answer = sc.nextLine();
-                        System.out.println();
-
-                        // 判断对错
-                        if (test.getTestAnswer().equalsIgnoreCase(answer)) {
-                            stu.setStuScore(stu.getStuScore() + 10);
-                        }
-                    }
-                    System.out.println("答题结束");
-                    System.out.println(stu.toString());
-                }else {
-                    System.out.println("错误，请重新输入");
-                    break loop;
-                }
+    public int verify(Student o) {
+        // 验证学生信息
+        for (Student s : linkStudent) {
+            if (s.getStuId() == o.getStuId() & s.getStuPwd() == o.getStuPwd()) {
+                return linkStudent.indexOf(s);
             }
         }
+        return -1;
+    }
+
+    @Override
+    public void answerPapers(Student stu) {
+        // 答题
+        String answer;
+        for (TestPaper test : linkTestPaper) {
+            System.out.println(test.toString());
+            System.out.printf("请输入你的答案：");
+            answer = sc.next();
+            System.out.println();
+
+            // 判断对错
+            if (test.getTestAnswer().equalsIgnoreCase(answer)) {
+                stu.setStuScore(stu.getStuScore() + 10);
+            }
+        }
+        System.out.println("答题结束");
+        System.out.println(stu.toString());
+        System.out.println();
     }
 }

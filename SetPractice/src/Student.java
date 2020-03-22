@@ -18,6 +18,11 @@ public class Student {
         this.stuPwd = stuPwd;
     }
 
+    public Student(int stuId, int stuPwd) {
+        this.stuId = stuId;
+        this.stuPwd = stuPwd;
+    }
+
     public int getStuId() {
         return stuId;
     }
