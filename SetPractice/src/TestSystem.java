@@ -10,7 +10,7 @@ public interface TestSystem {
     abstract void studentAdd();
     // 试卷添加
     abstract void testPaperAdd();
-    // 验证学生信息,返回学生学号,没有此学生返回-1
+    // 验证学生信息,返回学生在集合中的位置,没有此学生返回-1
     abstract  int verify(Student o);
     // 回答试卷
     abstract void answerPapers(Student stu);
