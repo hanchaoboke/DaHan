@@ -20,6 +20,7 @@ public class Dao<T> {
         T min = (T)number.get(0);
         T max = (T)number.get(0);
         Double result = 0.0;
+        byte by = 0;
         for (int i = 0; i < number.size(); i++){
             if (min.toString().compareTo(number.get(i).toString()) > 0){
                 min = (T)number.get(i);
@@ -27,7 +28,7 @@ public class Dao<T> {
             if (max.toString().compareTo(number.get(i).toString()) < 0){
                 max = (T)number.get(i);
             }
-            result += (Double)number.get(i);
+            by += number
         }
         // 有错误，不会写了
 
