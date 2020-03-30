@@ -1,3 +1,5 @@
+## javaMaven / src / main / java / com / banyuan / club / ThreadPracticeNew 文件夹下为周末线程练习
+
 ## javaMaven / src / main / java / com / banyuan / club / csv 文件夹下第一天csv练习
 
 ## InputOutputPractice / src 文件夹下输入输出练习
