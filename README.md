@@ -1,3 +1,7 @@
+## javaMaven / src / main / java / com / banyuan / club / intersiveYraining 文件夹下强化练习（未完成）
+
+## javaMaven / src / main / java / com / banyuan / club / ProxyPractice 文件夹下代理练习
+
 ## javaMaven / src / main / java / com / banyuan / club / ThreadPracticeNew 文件夹下为周末线程练习
 
 ## javaMaven / src / main / java / com / banyuan / club / csv 文件夹下第一天csv练习
