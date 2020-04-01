@@ -1,5 +1,7 @@
-package com.banyuan.club.ProxyPractice;
+package com.banyuan.club.intensiveTraining.PracticeThree.HomeWorkOne;
 
+import com.banyuan.club.ProxyPractice.CGLibProxy;
+import com.banyuan.club.ProxyPractice.JDKProxy;
 import net.sf.cglib.proxy.Enhancer;
 
 /**
@@ -11,19 +13,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // 静态代理测试
+        User u = new StaticProxy(new UserImp());
+        u.addUser("张三","123");
+
         // JDK动态代理测试
         UserImp userImp = new UserImp();
         User user = (User) new JDKProxy().newProxy(userImp);
         user.addUser("张三","123");
-
-        System.out.println();
-
-        // GCLib动态代理测试
-        Enhancer enhancer = new Enhancer();
-        enhancer.setSuperclass(UserImp.class);
-        enhancer.setCallback(new CGLibProxy());
-        UserImp u = (UserImp) enhancer.create();
-        u.addUser("张三","123");
 
     }
 }

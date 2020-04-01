@@ -1,4 +1,4 @@
-package com.banyuan.club.ProxyPractice;
+package com.banyuan.club.intensiveTraining.PracticeThree.HomeWorkOne;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
