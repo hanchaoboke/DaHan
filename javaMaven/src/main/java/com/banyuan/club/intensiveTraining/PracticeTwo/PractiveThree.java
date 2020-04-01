@@ -27,25 +27,26 @@ public class PractiveThree {
         System.out.println(myQueue.get());
 
 
-    }
+}
 }
 
+// 模拟队列
 class MyQueue<T>{
     private int size = 0;
     LinkedList<T> linkedList = new LinkedList<>();
 
+    // 模拟put
     public void put(T t){
         linkedList.addFirst(t);
         size++;
     }
 
+    // 模拟get
     public T get(){
-        return linkedList.getLast();
-    }
-    public T getHeadElement(){
         return linkedList.getFirst();
     }
 
+    // 判空
     boolean isEmpty(){
         if (size == 0) {
             return true;
