@@ -1,0 +1,370 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+/* 全文字体 */
+header body{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;    
+}
+/* a标签通用格式 */
+a:link{
+    color: #0366d6;
+    text-decoration: none;
+}
+a:visited{
+    color: #0366d6;
+    text-decoration: none;
+}
+a:hover{
+    color: #0366d6;
+    text-decoration: underline;
+}
+/* p通用格式 */
+p,a{
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #586069;
+}
+/* span通用格式 */
+span{
+    font-weight: 400;
+    font-size: 12px;
+    margin-right: 10px;
+    display: inline;
+    color: #24292e;
+}
+/* 头部 */
+header{
+    background-color: #24292e;
+    height: 64px; 
+    font-size: 14px;
+    font-weight: 600;
+    color: hsla(0, 0%, 100%, .7);
+}
+header a{
+    font-size: 14px;
+}
+header a:link{
+    color: white;
+}
+header a:visited{
+    color:white;
+}
+header a:hover{
+    color: gray;
+}
+/* 头部左侧导航栏 */
+.header-left-ul{
+    list-style: none;
+    margin-left: 25px;
+}
+.header-left-ul li{
+    float: left;
+    padding-right: 15px;
+    margin-top: 22px;
+}
+header img{
+    width: 47px;
+}
+.header-search{
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: hsla(0, 0%, 100%,.125);
+}
+/* 头部右侧导航栏 */
+.header-right-ul{
+    list-style: none;
+}
+.header-right-ul li{
+    float: right;
+}
+.lingdang{
+    width: 40px;
+    margin-top: 13px;
+}
+.touxiang{
+    width: 49px;
+    margin-top: 17px;
+    margin-right: 15px;
+}
+.jiahao{
+    width: 49px;
+    margin-top: 17px;
+}
+.div-clear{
+    clear: both;
+}
+/* 主体 */
+body{
+    width: 1440px;
+    height: 750px;
+}
+.div-left{
+    /* background-color: aquamarine; */
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+.div-right{
+    width: 350px;
+    height: 100%;
+    float: right;
+    padding-right: 16px;
+    padding-left: 16px;
+    background-color: #f6f8fa;
+}
+.div-mid{
+    height: 100%;
+    /* margin: 0px 362px 0px 362px; */
+    margin-left: 300px;
+    margin-right: 370px;
+    padding-left: 16px;
+    padding-right: 16px;
+ 
+    background-color: #f6f8fa;
+}
+
+/* 主体左侧部分 */
+.title{
+    margin-top: 38px;
+    margin-left: 23px;
+}
+.btn{
+    float: right;
+    margin-top: -4px;
+    margin-right: 23px;
+    height: 27px;
+    width: 60px;
+    font-size: 13px;
+    padding: 3px 10px;
+    background-color: #28A745;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.repository-input{
+    font-size: 14px;
+    padding: 6px 8px;
+    width: 235px;
+    height: 18px;
+    border:1px solid #d2d2d2;
+    margin-top: 10px;
+    margin-left: 23px;
+    border-radius: 3px;
+}
+.repository-li img{
+    width: 30px;
+    
+    float: left;
+}
+
+.repository-ul{
+    list-style: none;
+    margin-left: -15px;
+}
+.repository-li{
+    margin-top: 12px;
+    margin-left: 30px;
+    line-height: 23px;
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+.repository-li a{
+    font-size: 14px;
+}
+.repository-li-a{
+    margin-left: 25px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+.repository-p{
+    margin-top: 10px;
+}
+.repository-li-a:link{
+    color: rgb(138, 138, 138);
+}
+.repository-li-a:visited{
+    color: rgb(138, 138, 138);
+}
+.repository-li-a:hover{
+    color: #0366d6;
+}
+
+.hr{
+    height: 1px;
+    background-color:rgb(171, 166, 175);
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* 主体左侧仓库名下面提示信息 */
+
+.div-left-explain{
+    width: 100%;
+    height: 45%;
+    /* background-color: blanchedalmond; */
+}
+.div-left-explain p{
+    margin-left: 29px;
+    line-height: 25px;
+    color: #24292e;
+    font-size: 14px;
+}
+.btn-explain{
+    height: 27px;
+    width: 160px;
+    font-size: 13px;
+    padding: 3px 10px;
+    margin-left: 23px;
+    border: 1px solid #d2d2d2;
+    background-color: white;
+    color: #0366d6;
+    border-radius: 3px;
+}
+.btn-explain:hover{
+    background-color: #0366d6;
+    color: white;
+}
+
+/* 主体中间 */
+.div-mid-box1{
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+}
+.div-mid-box1 h2{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.div-mid-box1 p{
+    margin-bottom: 10px;
+}
+.div-mid-box1 a{
+    text-decoration: none;
+}
+.div-mid-box1 a:link{
+    color: #0366d6;
+}
+.div-mid-box1 a:visited{
+    color: #0366d6;
+}
+.div-mid-box1 a:hover{
+    color: #0366d6;
+    text-decoration: underline;
+}
+.div-mid-box1 button{
+    margin-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #0366d6;
+    background-color: #ffffff;
+    border-radius: 3px;
+    font-size: 14px;
+    border: 1px solid #d2d2d2;
+}
+.div-mid-box1 button:hover{
+    background-color: #0366d6;
+    color: #ffffff;
+}
+
+.div-mid-box2{
+    margin-top: 24px;
+}
+.div-mid-box2 p{
+    font-size: 12px;
+    color: #586069;
+}
+#div-mid-box2-a{
+    color: #586069;
+}
+#div-mid-box2-a:hover{
+    color: #0366d6;
+}
+#div-mid-box2-p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.div-mid-footer{
+    margin-top: 202px;
+    margin-bottom: 32px;
+    
+}
+.footer-box1{
+    margin-right: 122px;
+    float: left;
+}
+.footer-box2{
+    padding-left: 24px;
+    float: left;
+}
+.footer-box3{
+    padding-left: 190px;
+    float: left;
+}
+.footer-box4{
+    padding-right: 24px;
+    float: right;
+}
+
+.footer-box1 span{
+    font-size: 12px;
+    color: #586069;
+}
+
+.footer-box2 ul{
+    list-style: none;
+    font-size: 12px;
+    color: #586069;
+}
+.footer-box2 li{
+    margin-bottom: 4px;
+}
+
+.footer-box3 ul{
+    list-style: none;
+    font-size: 12px;
+    color: #586069;
+}
+.footer-box3 li{
+    margin-bottom: 4px;
+}
+
+.footer-box4 ul{
+    list-style: none;
+    font-size: 12px;
+    color: #586069;
+}
+.footer-box4 li{
+    margin-bottom: 4px;
+}
+
+
+/* 主体右侧 */
+.div-right h2{
+    font-size: 14px;
+    font-weight: 600;
+}
+.div-right a{
+    color: #586069;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.div-right a:hover{
+    color: #0366d6;
+}
+
+.div-right div{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(171, 166, 175);
+}
